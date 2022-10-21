@@ -1,9 +1,8 @@
 const { chromium } = require("playwright");
-const config = require("./playwright.config");
 
 (async () => {
   const browser = await chromium.launch({
-    headless: true,
+    headless: false,
     slowMo: 5000,
     devtools: true
   });
